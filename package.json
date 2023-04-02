@@ -1,7 +1,7 @@
 {
-  "name": "typescript-starter",
-  "version": "1.0.0",
-  "description": "",
+  "name": "elb-oracle",
+  "version": "0.1.0",
+  "description": "Ethereum like blockchain OHLCV oracle",
   "main": "index.js",
   "scripts": {
     "build": "rimraf ./dist && npx tsc",
@@ -18,9 +18,9 @@
       "pre-commit": "npm run prettier-format && npm run lint"
     }
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["dex", "uniswap", "pancakeswap", "ohlcv", "reserves", "price", "oracle"],
+  "author": "Salamandra Devs",
+  "license": "Privative",
   "devDependencies": {
     "@types/node": "^18.15.11",
     "@typescript-eslint/eslint-plugin": "^5.57.0",
