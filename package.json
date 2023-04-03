@@ -1,26 +1,29 @@
 {
-  "name": "elb-oracle",
-  "version": "0.1.0",
-  "description": "Ethereum like blockchain OHLCV oracle",
-  "main": "index.js",
+  "name": "local-package",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
   "scripts": {
     "build": "rimraf ./dist && npx tsc",
+    "clean": "rimraf ./dist",
     "start:dev": "npx nodemon",
     "start": "npm run build && node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint . --ext .ts",
-    "lint-fix": "eslint . --ext .ts --fix",
-    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "prettier": "prettier --config .prettierrc 'src/**/*.ts' --check",
+    "prettier:fix": "prettier --config .prettierrc 'src/**/*.ts' --write",
     "prepare": "husky install"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run prettier-format && npm run lint"
+      "pre-commit": "npm run prettier:fix && npm run lint"
     }
   },
-  "keywords": ["dex", "uniswap", "pancakeswap", "ohlcv", "reserves", "price", "oracle"],
-  "author": "Salamandra Devs",
-  "license": "Privative",
+  "keywords": [],
+  "author": "Odair Trujillo",
+  "license": "LGPL-3.0-or-later",
   "devDependencies": {
     "@types/node": "^18.15.11",
     "@typescript-eslint/eslint-plugin": "^5.57.0",
