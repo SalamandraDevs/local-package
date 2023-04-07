@@ -1,9 +1,9 @@
 {
   "name": "local-package",
-  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
+  "types": "types",
   "scripts": {
     "build": "rimraf ./dist && npx tsc",
     "clean": "rimraf ./dist",

@@ -13,6 +13,6 @@ class usserAccount {
   }
 }
 
-export const usuario: User = new usserAccount('Odair Augusto Trujillo', 2020);
+export const usuario: User = new usserAccount('Odair Augusto Trujillo', 2023);
 
 console.log('Message from module: ', usuario.name);
