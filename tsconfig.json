@@ -1,23 +1,25 @@
 {
   "compilerOptions": {
-    "rootDir": "src",
-    "outDir": "dist",
-    "target": "es2020",
-    "lib": ["es2020"],
-    "module": "commonjs",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "target": "es2022",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "esModuleInterop": true,
     "resolveJsonModule": true,
     "allowJs": true,
-    "esModuleInterop": true,
-    "declaration": true, // Automatic types declarations of .d.ts files
-    "declarationMap": false,
+    "checkJs": true,
+    "declaration": true,
+    "declarationMap": true,
     "declarationDir": "./types",
+    "inlineSourceMap": true, // for tslog
     "forceConsistentCasingInFileNames": true,
     "strict": true,
-    "noImplicitAny": true,
-    "skipLibCheck": true
+    "noImplicitAny": false,
+    "skipLibCheck": true,
   },
-  "include": ["src/**/*.ts"],
+  "include": ["./src/**/*.ts"],
   "ts-node": {
-    "esm": true // ES6 modules support
+    "esm": true
   }
 }
